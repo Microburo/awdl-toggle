@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2b2b"/>
+      <stop offset="1" stop-color="#050505"/>
+    </linearGradient>
+    <path id="bolt" d="M575.6 175 L406.1 378.4 L502.9 378.4 L450.8 520 L617.9 308.2 L527.2 308.2 Z"/>
+    <!-- Gap cut around the bolt so the Wi-Fi arcs stay readable -->
+    <mask id="gap">
+      <rect width="1024" height="1024" fill="#fff"/>
+      <use href="#bolt" fill="#000" stroke="#000" stroke-width="66" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <rect x="41" y="41" width="942" height="942" rx="212" fill="url(#bg)" stroke="#fff" stroke-opacity="0.12" stroke-width="6"/>
+  <g mask="url(#gap)" fill="none" stroke="#fff" stroke-width="52" stroke-linecap="round">
+    <path d="M299.9 572.9 A300 300 0 0 1 724.1 572.9"/>
+    <path d="M367 640 A205 205 0 0 1 657 640"/>
+    <path d="M434.2 707.2 A110 110 0 0 1 589.8 707.2"/>
+    <circle cx="512" cy="785" r="40" fill="#fff" stroke="none"/>
+  </g>
+  <use href="#bolt" fill="#fff" stroke="#fff" stroke-width="20" stroke-linejoin="round"/>
+</svg>

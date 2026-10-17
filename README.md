@@ -49,7 +49,9 @@ Then open System Settings: **AirDrop Wi-Fi** is at the bottom of the sidebar. If
 
 ## Icon
 
-`swift tools/make_icon.swift build/AWDLToggle.iconset && iconutil -c icns -o Resources/AWDLToggle.icns build/AWDLToggle.iconset`
+Source: `Resources/AWDLToggle.svg`. Rebuild the `.icns`:
+
+`swift tools/make_icon.swift Resources/AWDLToggle.svg build/AWDLToggle.iconset && iconutil -c icns -o Resources/AWDLToggle.icns build/AWDLToggle.iconset`
 
 ## Uninstall
 
